@@ -1,0 +1,192 @@
+body{
+	color: #665544;
+}
+#admin_content{
+	display: block;     
+	width: 80%;     
+	margin: 10px auto 10px;     
+	min-height: 700px;
+	box-shadow: 0px 0px 1px #dddddd;
+	padding:  40px;  
+}
+form{
+	padding: 0px 40px;
+}
+fieldset {     
+	border: 0;
+} 
+
+legend {     
+	/*text-indent: -9999px;*/
+	color: rgba(218, 219, 222,1);
+	padding-top: 10px;
+} 
+div.form_title{
+	min-height: 30px;
+	background-color: rgba(222, 0, 0,1);
+	font-size: 24px;     
+	font-weight: bold; 
+	color: rgba(255, 204, 187,1);
+	display: block;
+	padding: 10px 20px;
+	/*position: absolute;
+	top:0px;*/
+	width: 300px;
+
+}
+label {
+	display: block;
+	color: rgba(0, 138, 203,.7);
+	padding: 5px;
+	font-size: 18px;
+	font-family: "lato", font_awesome, sans-serif;
+	font-weight: lighter;
+	
+}
+
+input[type=text],input[type=password]{     
+	display: block;     
+	width: 50%;
+
+	font-weight: bold; 
+} 
+
+textarea {     
+	width: 90%;     
+	height: 200px; 
+	resize: none;
+	overflow: hidden;
+} 
+
+input[type=text],input[type=password],textarea {     
+	/*border: 1px solid rgba(220, 0, 0,.2);     
+	-moz-border-radius: 3px;     
+	-webkit-border-radius: 3px;     
+	border-radius: 3px;     
+	-moz-box-shadow: inset 1px 1px 2px #789;     
+	-webkit-box-shadow: inset 1px 1px 2px #789;     
+	box-shadow: inset 1px 1px 2px #789;     
+	    
+	margin: 0 0 4px;     
+	font-size: 16px;     
+	font-family: georgia, serif;
+
+	color: rgba(220, 0, 0,.4); 
+	padding: 7px 20px;*/
+	font-weight: lighter;
+	font-size: 14px; 
+	border: 1px solid rgba(202, 202, 202,1);
+	padding: 10px 40px; 
+	background:  rgb(241, 241, 241);
+	width: 50%;
+	border-radius:5px;
+	color:/*rgba(147, 135, 124,.8)*/rgba(130, 126, 148,1);
+	box-shadow:inset 0px 0px 3px rgba(164, 195, 202,1);
+	z-index:20;
+	/*position:relative;*/
+	opacity:0.7;
+	/*left:20px;*/
+	
+} 
+
+textarea{
+	width: 90%;
+}
+input[type=text]:hover,input[type=password]:hover,textarea:hover {
+	background-color:  rgba(0, 204, 0,.1);
+}
+input[type=text]:focus,input[type=password]:focus,textarea:focus {
+	background-color: #fbfbfb;
+}
+input[type=checkbox]{
+	display: block;
+	border:1px solid rgba(75, 174, 225,1);
+	padding: 5px;
+	background-color: rgba(75, 174, 225,1);
+}
+div#checkbox{
+	color:rgba(75, 174, 225,1);
+	margin: 20px 10px;
+	height: 30px;
+}
+input[type=submit] {     
+	padding:8px 20px;
+	border-radius:3px;
+	opacity:0.9;
+	
+	background-color:rgba(0, 138, 203,1);
+	border:3px solid rgba(0, 138, 203,1);
+	color:#ebebeb;
+
+	font-size:14px;
+} 
+input[type=submit]:hover{
+	color:#ebebeb;
+	background-color:rgba(0, 88, 200,1);
+	border:3px solid rgba(0, 88, 200,1);
+}
+.admin-options {     
+	text-align: center; 
+} 
+
+.admin-options form,.admin-options p {     
+	display: inline; 
+} 
+
+a.admin {     
+	padding:8px 20px;
+	opacity:0.9;
+	margin-top: 5px;
+	background-color:rgba(0, 138, 203,1);
+	border:3px solid rgba(0, 138, 203,1);
+	color:#ebebeb;
+	z-index: 10;
+	font-size: 14px;
+} 
+a.admin:hover{
+	color:#ebebeb;
+	background-color:rgba(0, 88, 200,1);
+	border:3px solid rgba(0, 88, 200,1);
+}	
+#or_fix{
+	color: rgba(218, 219, 222,1);
+}
+div#admin-link{
+	display: block;
+	margin-top: 15px;
+
+}
+div#admin-link a{
+	border-radius:3px;
+}
+h1,h2,h3,h4,h5,h6{
+}
+p.desc{
+	color: rgba(130, 126, 148,1);
+	text-align: justify;
+	padding: 10px;
+}
+#log_out{
+	position: relative;
+	left: 127px;
+	bottom: 28.5px;
+	cursor: pointer !important;
+}
+input:disabled{
+	background-color:#ccc !important;
+	border:3px  solid #ccc !important;
+}
+
+select{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 300px;
+	padding: 5px;
+	color:rgb(76, 173, 218);
+	background-color: transparent;
+	border-radius: 6px;
+	box-shadow: 0px 0px 3px 1px rgba(218, 218, 218,.1);
+	font-weight: bold;
+	font-family: "lato", font_awesome, helvetica;
+
+}

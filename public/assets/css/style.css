@@ -1,0 +1,172 @@
+@font-face{
+	font-family:font_awesome;
+	src:url('../fonts/glyphicons-halflings-regular.ttf');
+
+}
+
+*{
+	margin:0;
+
+
+}
+body {     
+	background-color: rgba(229, 243, 255,.1);     
+	font-family:Arial/*, font_awesome*/,georgia, serif;     
+	font-size: 13px; 
+	box-sizing: border-box;
+} 
+
+#content {     
+	display: block;     
+	width: /*812px*/80%;     
+	margin: 10px auto 10px;     
+	padding: 10px;     
+	box-shadow: 0px 0px 1px #dddddd;
+	/*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
+	min-height: 100px;
+	background-color: rgba(250,250,250,.1);
+	 } 
+
+	h2,p {     
+		margin: 0 auto 14px; 
+		text-align: center; 
+		color: rgba(220,0,0,1);
+		font-family: Arial, font_awesome,verdana;
+		/*background-color:rgba(205, 8, 8,.3);*/
+	} 
+
+	ul {     
+		display: block;     
+		clear: left;     
+		height: 82px;     
+		width: 812px;    
+		margin: 0 auto;    
+		padding: 0;     
+		list-style: none;     
+		background-color: #FFF;     
+		text-align: center;     
+		border: 1px solid rgba(130, 10, 14,.1);     
+		border-top: 0;     
+		border-bottom: 1px solid rgba(130, 10, 14,.1); 
+	} 
+
+li.saturdays:not(.fill){
+		background-color:/*rgba(254, 231, 244,.5)*/ rgba(247, 222, 76,.6); 
+	}
+	li.sundays:not(.fill){
+		background-color:rgba(255,165,0,.1); 
+
+	}
+
+	li {     
+		position: relative;     
+		float: left;     
+		margin: 0;     
+		padding: 20px 2px 2px;     
+		border-left: 1px solid rgba(130, 10, 14,.01);     
+		border-right: 1px solid rgba(130, 10, 14,.1);     
+		width: 110px;     
+		height: 60px;     
+		overflow: hidden;     
+		background-color: white; 
+		cursor: pointer;
+	} 
+
+	li:hover:not(.today) {     
+		background-color: #FCB;     
+		z-index: 1;     
+		box-shadow: 0 0 2px -3px #efefef; 
+	} 
+
+	.weekdays {     
+		height: 20px;     
+		border-top: 1px solid rgba(130, 10, 14,.4); 
+		color: rgba(255, 204, 187,1);
+	} 
+
+	.weekdays li {     
+		height: 16px;     
+		padding: 2px 2px;     
+		background-color: rgba(204, 54, 27,1); 
+	} 
+
+	.fill { 
+		background-color: rgba(218, 219, 222,.4); 
+	} 
+
+	li.fill:hover {    
+		/*background-color: #BCD; */    
+		-moz-box-shadow: none;     
+		-webkit-box-shadow: none;     
+		box-shadow: none; 
+	} 
+	
+
+	li strong {     
+		position: absolute;     
+		top: 2px;     
+		right: 2px; 
+		color: rgba(204,0,0,1);
+	} 
+
+	li a {     
+		position: relative;     
+		display: block;    
+		border: 1px solid rgba(130, 135, 144,.1);    
+		margin: 2px;    
+		padding: 5px 15px;     
+		font-size: 11px;     
+		background-color: rgba(255, 152, 0,.4);     
+		text-align: left;     
+		-moz-border-radius: 6px;     
+		-webkit-border-radius: 6px;     
+		border-radius: 1px;     
+		z-index: 1;     
+		text-decoration: none;     
+		color: rgba(204, 0, 0,.7);     
+		font-weight: bold;     
+		font-style: italic; 
+	} 
+
+	li a:hover {     
+		background-color: rgba(165, 51, 36,.7);     
+		z-index: 2;    
+		color: rgba(255, 152, 0,1); 
+	
+	} 
+	a{
+		color: rgba(8, 98, 170,1);
+		text-decoration: none;
+	}
+	a:hover{
+		color: rgba(220, 0, 0,1);
+
+	}
+	li.today,li.today.saturdays{
+
+		background-color: rgba(244, 208, 0,.7)/*rgba(14, 90, 154,.2)*/;
+	
+	}
+	li.today{
+		background-color:rgba(76, 175, 80,.7) !important;
+		color: #f1f1f1 ;
+	}
+	span#month,span#year{
+	background-color: rgba(250,250,250,.1);
+	padding: 2px 5px;
+	border-radius: 6px;
+
+	}
+	span#month{
+		padding-left: 10px;
+
+	}
+	span#year{
+		padding-right: 10px;
+	}
+	span#month:hover,span#year:hover{
+	background-color: rgba(109, 110, 106,.1);
+
+
+	}
+	

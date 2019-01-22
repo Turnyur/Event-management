@@ -1,0 +1,410 @@
+.modal-overlay {     
+	position: fixed;     
+	top: 0;     
+	left: 0;     
+	bottom: 0;     
+	width: 100%;     
+	height: 100%;     
+	background-color: rgba(0,0,0,.8);     
+	z-index: 4; 
+} 
+ 
+.modal-window {     
+	position: absolute;     
+	top: 260px;     
+	left: 11%;     
+	width: 75%;     
+	min-height: 500px;     
+	/*margin-left: -150px;    */ 
+	padding: 20px;     
+	border: 1px solid rgba(0,0,0,.8);     
+	background-color: #FFF;     
+	/*-moz-border-radius: 6px;     
+	-webkit-border-radius: 6px;     
+	border-radius: 6px;     */
+	-moz-box-shadow: 0 0 14px #123;     
+	-webkit-box-shadow: 0 0 14px #123;     
+	box-shadow: 0 0 14px #123;     
+	z-index: 5; 
+} 
+ 
+.modal-close-btn {     
+	position: relative;     
+	top: -20px;     
+	right: -20px;  
+	float: right;  
+	margin: 0;     
+	padding: 0px 10px; 
+	padding-bottom: 3px;
+
+	text-decoration: none;     
+	color: black;     
+	font-size: 25px; 
+} 
+ .modal-close-btn:hover{
+ 	background-color: rgba(200,10,10,1);
+ 	color: rgba(255, 255, 255,1);
+ }
+.modal-close-btn:before {     
+	position: relative;     
+	top: -1px;     
+	content: "";     
+	text-transform: uppercase;     
+	font-size: 10px; 
+} 
+
+
+/*
+
+
+		Newest Stylesheets
+
+
+*/
+
+.modal-window{
+	min-height: 100px; 
+
+}
+div.modal-window.selectCal{
+	background-color: rgba(255, 69, 0,.01);
+	border: 0px;
+	box-shadow: 0 0 0px #123;     
+	
+}
+div.modal-window.selectCal ul{
+	
+	width: 696px;
+}
+div.modal-window.selectCal li{
+	background-color: rgba(255, 246, 229,.9);
+	color: rgba(204, 0, 0,1);
+	font-family:Arial, font_awesome, Helvetic, Neue; 
+	font-weight: bold;
+}
+div.modal-window.selectCal li:hover{
+	background-color: rgba(255, 204, 187,1);
+}
+a#left,a#right{
+	font-size: 28px;
+	color:rgba(0, 120, 215,.8);
+	margin-right: 10px;
+	
+}
+a#left:hover,a#right:hover{
+
+	color:rgba(215, 0, 0,.8);
+
+}
+.lastAction{
+	z-index: 1;
+	background-color: rgba(103, 195, 44,.4);
+}
+
+
+/*This part of css custormizes the original <select><option></option></select>*/
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  width: 250px;
+  margin-top: 10px;
+}
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+.select-selected {
+  background-color: /*DodgerBlue*/rgba(0, 120, 215,1);
+}
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+.select-items div:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*End of  custorm <select><option></option></select>*/
+
+
+
+
+/*This is Second Modal CSS code. This Second Modal CSS code was implemented using ZOOM ANIMATION*/
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+#modal-login-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+#modal-register-submit{
+	width: auto;
+    padding: 10px 18px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+    color: white;
+   /* border: none;
+    outline: 0;*/
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */ 	/*button#goUpButton was set to 99*/
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close-login {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close-login:hover,
+.close-login:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animateZoomIn 0.6s;
+    animation: animateZoomIn 0.6s
+}
+.antiAnimate{
+	-webkit-animation: animateZoomOut 0.6s;
+    animation: animateZoomOut 0.6s
+}
+@-webkit-keyframes animateZoomIn {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animateZoomIn {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+@-webkit-keyframes animateZoomOut {
+    from {-webkit-transform: scale(1)} 
+    to {-webkit-transform: scale(0)}
+}
+    
+@keyframes animateZoomOut {
+    from {transform: scale(1)} 
+    to {transform: scale(0)}
+}
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+/*The Following CSS code Embellishes  Drop button edit and create buttons*/
+/* The Modal (background) */
+.modal-bottom {
+    display: block; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-bottom-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 60%;
+    left: 20%;
+    min-height: 100px;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+.slideOut{
+	position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 60%;
+    left: 20%;
+    min-height: 300px;
+    -webkit-animation-name: slideOut;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideOut;
+    animation-duration: 0.4s
+}
+/* The Close Button */
+.close-bottom {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-bottom:hover{
+	color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close-bottom:focus {
+    color: #a00;
+}
+
+.modal-bottom-header {
+    padding: 10px 16px;
+    background-color: rgba(10, 15, 21,1);
+    color: white;
+}
+
+.modal-bottom-body {
+	padding: 16px 16px;
+}
+
+.modal-bottom-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+@-webkit-keyframes slideOut {
+    from {bottom: -0px; opacity: 1} 
+    to {bottom: 300px; opacity: 0}
+}
+
+@keyframes slideOut {
+    from {bottom: 0px; opacity: 1}
+    to {bottom: 300px; opacity: 0}
+}
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}

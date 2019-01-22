@@ -1,0 +1,587 @@
+
+
+section,header{
+	display:block;
+	
+}
+header,footer{
+	background-color:rgba(193, 23, 23,1);
+	/*padding:10px;*/
+	text-align:left;
+	/*padding-left: 30px;*/
+	min-height: 130px;
+	margin:auto;
+	
+
+	
+}
+footer{
+	min-height:200px; 
+	box-sizing: border-box;
+	background-color: rgba(10, 15, 21,1);
+
+}
+footer div.column{
+	float: left;
+	width: 33.3%;
+	
+
+}
+footer a{
+	
+	margin: 0 auto;
+	text-decoration: none;
+	color:rgba(255, 204, 187,1);
+	display: block;
+	padding: 8px 16px;
+	/*font-size:18px;*/
+	/*font-weight: bold; */
+	transition: all 0.4s ease;
+	color: rgba(85, 172, 238,1);
+}
+footer a:hover{
+	/*background-color:rgba(255, 94, 21,.8); */
+	color: white;
+	text-decoration: underline;
+}
+footer div#footer{
+	position: relative;
+}
+.footer-links p,footer p{
+	color:rgba(252, 151, 1,1);
+	padding: 15px;
+  clear: both;
+}/*
+div#footer{
+	margin-top: 120px;
+right: 0;
+
+}
+div#footer a{
+	display: inline;
+	padding:18px 20px;
+	border-radius:50%;
+	
+	opacity: .8;
+	float: left;
+
+  max-width: 20px;
+  max-height: 20px;
+
+}
+div#footer a:hover{
+	background-color: rgba(200,200,200,.2);
+
+}*/
+header figure img{
+	max-width:60px;
+	max-height:60px;
+}
+footer{
+	text-align: center;
+	color: rgba(240, 240, 171,1);
+	padding: 15px
+}
+.slogan{
+	color:#800000;
+
+}
+h3{
+	color:rgba(255,250,255,1);
+	font-family:Arial;
+
+}
+
+#page{
+	box-shadow: 1px 1px 30px #dddddd;
+	max-width:100%;
+	min-height:550px;
+	border: 1px solid #efefef;
+	margin:auto;
+	overflow: auto;
+	color:#665544;
+	/*border-radius:5px;*/
+}
+span#meta-menu{
+  	float: right;
+	margin-right: 40px;
+	color: #ccc;
+	font-weight: bold;
+	z-index: 20;
+}
+span#meta-menu a{
+  color: rgba(252, 151, 1,1);
+}
+span#meta-menu a:hover{
+  color: rgba(229, 241, 251,1);
+  text-decoration: underline;
+}
+div#branding{
+	padding: 15px;
+}
+
+/*Normal Icon-bar and Navigation bar*/
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: padding-top 1s ease;
+}
+/*.sticky + #content {
+  padding-top: 360px;
+  transition: padding-top 0.6s ease;
+
+}*/
+.icon-bar {
+    width: 100%;
+    background-color: #444;
+    overflow: hidden;
+    z-index: 5;
+
+}
+
+.icon-bar a{
+    float: left;
+    
+    text-align: center;
+    padding: 12px 20px;
+    transition: all 0.6s ease;
+    color: #efefef;
+    font-size: 20px;
+    border-right: 1px solid #444;
+
+}
+.icon-bar a::before{
+/*content: "♥";*/
+}
+
+.icon-bar a:hover {
+    background-color: rgba(255, 69, 0,.7);
+    border-bottom: 4px solid rgba(255, 69, 0,.7);
+}
+
+#icon-bar a.active {
+    /*background-color: rgba(220, 0, 0,1) !important;*/
+    border-bottom: 4px solid rgba(255, 69, 0,1);
+    transition: all 0.5s ease-in;
+    
+    
+
+}
+a.icon{
+	display: none;
+	color: rgb(144, 219, 255);
+
+}
+@media screen and (max-width: 600px) {
+	#icon-bar a.active{
+		display: block;
+	}
+	#icon-bar a:not(.icon){
+		border-bottom: 1px solid rgba(40, 41, 35,.2);
+		color:rgba(255, 108, 0,1);
+		padding-left: 40px;
+	}
+	#icon-bar a/*:not(:first-child)*/,div.dropdown{
+		display: none;
+		
+
+	}
+	
+
+#icon-bar a.icon{
+	display: block;
+	float: right !important;
+
+}
+#icon-bar a.active {
+    background-color: rgba(220, 7, 7,.8) !important;
+    transition: all 0.2s ease;
+    
+
+}
+}
+
+
+
+@media screen and (max-width: 600px){
+	
+  #icon-bar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+
+}
+	#icon-bar.responsive a{
+		display: block;
+		float: none;
+		text-align: left;
+		
+
+	}
+	#icon-bar.responsive>a{
+		color: #fff;
+	}
+#icon-bar{
+	
+
+}
+
+}
+
+/*Animated icon-bar and Navigation bar*/
+
+
+
+#container-icon-bar{
+		display: none;
+
+	}
+
+
+@media screen and (max-width: 600px){
+
+#container-icon-bar {
+	float: right;
+	position: absolute;
+	top: 0;
+	right: 10px;
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-top: 5px;
+    /*z-index:20;*/
+
+}
+.bar1, .bar2, .bar3 {
+    width: 30px;
+    height: 3px;
+    background-color: #fff !important;
+    margin: 6px 0;
+    transition: 0.4s;
+    background-color: #ccc;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-6px, -6px);
+}
+/*Animated icon-bar ends here*/
+
+
+div.dropdown.change{
+	float: none;
+	display: block;
+	padding-left: 25px;
+	
+}
+.dropbtn{
+	/*color: rgb(255, 69, 0) !important;*/
+	/*font-size: 20px;*/
+}
+
+
+}
+
+/*This Section takes care of dropdown menu buttons*/
+
+div.dropdown .dropbtn {
+	cursor: pointer;
+    font-size: 20px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown {
+    float: left;
+    overflow: auto;
+    border-right: 1px solid #444;
+    padding: auto 10px;
+
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 50;
+    transition: all 0.6s ease;
+
+
+}
+.dropdown-content a {
+	font-size: 14px;
+    float: none;
+    color: rgb(220, 7, 7);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    border:0;
+}
+
+.dropdown-content a:hover {
+    background-color: rgba(255, 69, 0,1);
+    color: #fff !important;
+}
+.dropdown .dropbtn:hover{
+	background-color:rgba(255, 69, 0,.5); 
+	transition: all 0.6s ease;
+	color: white !important;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    transition: all 0.6s ease;
+}
+
+
+/*Social Media User Interface*/
+#mySidenav a {
+    position: absolute;
+    left: -60px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 80px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    text-indent:45px;
+    z-index: 2;
+}
+@media screen and ( max-width: 900px){
+	#mySidenav a{
+		left:-100px;
+		
+	}
+}
+#mySidenav a:hover {
+    left: 0;
+    text-indent:30px;
+}
+
+
+#android {
+    top: 250px;
+      background: #a4c639;
+  	color: white;
+
+}
+
+#facebook {
+    top: 310px;
+     background: #3B5998;
+  	color: white;
+}
+
+#twitter {
+    top: 370px;
+    background: #55ACEE;
+  color: white;
+}
+
+#instagram {
+    top: 430px;
+    background: #125688;
+  color: white;
+}
+#youtube {
+    top: 490px;
+     background: #bb0000;
+  color: white;
+}
+#google {
+    top: 550px;
+    background: #dd4b39;
+  color: white;
+}
+
+
+
+/*This section of CSS is used in styling SlideShow*/
+.mySlides {display: none;
+}
+.mySlides img {
+	vertical-align: middle;
+	 animation: shake .2s;
+  	animation-iteration-count: 1;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 90%;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  
+ 
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 35px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 97%;
+  text-align: center;
+  padding-bottom: 30px; 
+  background-color: rgba(0,0,0,.6);
+   transition: all .6s ease-in;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 20px;
+  right:2px;
+  padding: 25px;
+  background-color:rgba(62, 141, 64,.5);
+  transition: all .6s ease-in;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .0} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .0} 
+  to {opacity: 1}
+}
+@media screen and (max-width: 700px){
+	.text{
+		font-size: 15px;
+		padding-bottom: 10px; 
+	}
+	.numbertext {
+		font-size: 15px;
+		padding: 10px;
+	}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+@keyframes shake {
+ /* 0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }*/
+
+   0% { transform: translate(10px, 0px) rotate(0deg); }
+  10% { transform: translate(20px, 0px) rotate(0deg); }
+  20% { transform: translate(30px, 0px) rotate(0deg); }
+  30% { transform: translate(40px, 2px) rotate(0deg); }
+  40% { transform: translate(50px, 0px) rotate(0deg); }
+  50% { transform: translate(-50px, 0px) rotate(0deg); }
+  60% { transform: translate(-40px, 0px) rotate(0deg); }
+  70% { transform: translate(30px, 0px) rotate(0deg); }
+  80% { transform: translate(20px, 0px) rotate(0deg); }
+  90% { transform: translate(10px, 0px) rotate(0deg); }
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+
+}
+#goUpButton {
+  display: none;
+  position: fixed;
+  bottom: 340px;
+  right: 5px;
+  width: 50px;
+  height: 50px
+  right: 20px;
+  z-index: 99;
+  /*font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 94, 21,.8);
+  color: white;
+   padding: 15px;*/
+  cursor: pointer;
+ 
+  
+  border-radius: 50%;
+}
+
+#goUpButton:hover {
+  background-color: rgba(110,110,110,.1);
+}
+
+
+
+/*This section of code creates a custorm checkbox in the registration form at index.php*/
